@@ -1,0 +1,22 @@
+
+.menu {
+    display: inline-block;
+    margin: auto;
+}
+
+.menu__list {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu__item {
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+}
+
+.menu__item_focused {
+    color: chocolate; /* цвет текста для неактивной ссылки */
+}

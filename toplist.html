@@ -3,25 +3,32 @@
 <head>
     <title>Toplist</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/page.css">
+    <link rel="stylesheet" type="text/css" href="/css/content.css">
+    <link rel="stylesheet" type="text/css" href="/css/top-list.css">
+    <link rel="stylesheet" type="text/css" href="/css/link.css">
 </head>
-<header>
-    <h1><a href="/index.html">HELPMEPLS</a></h1>
+<header class="header header_theme_ligth-wood">
+    <h1 class="logo"><a class="link_disabled-decoration" href="/index.html">HELPMEPLS</a></h1>
     <nav class="menu">
-        <ul>
-            <li><a href="/start.html">Start</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/toplist.html" class="disabled">Top List</a></li>
+        <ul class="menu__list">
+            <li class="menu__item"><a class="link_disabled-decoration" href="/start.html">Start</a></li>
+            <li class="menu__item"><a class="link_disabled-decoration" href="/about.html">About</a></li>
+            <li class="menu__item menu__item_focused"><span>Top List</span></li>
         </ul>
     </nav>
 </header>
-<body class="toplist-background">
-<ol>
-            <li>John</li>
-            <li>Doe</li>
-            <li>Billy</li>
-			<li>Scott</li>
-			<li>Marley</li>
-        </ol>
+<body class="page page_theme_ligth-wood">
+<div class="content">
+    <ol class="top-list">
+        <li class="top-list__item">John</li>
+        <li class="top-list__item">Doe</li>
+        <li class="top-list__item">Billy</li>
+        <li class="top-list__item">Scott</li>
+        <li class="top-list__item">Marley</li>
+    </ol>
+</div>
 </body>
 </html>

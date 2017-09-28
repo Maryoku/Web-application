@@ -1,0 +1,14 @@
+.button {
+    width: 150px;
+    height: 60px;
+    position: relative;
+    margin: 15% 45%;
+    border: 2px solid black;
+    background-color: burlywood;
+}
+
+.button__link {
+    position: relative;
+    top: 40%;
+    left: 15%;
+}
