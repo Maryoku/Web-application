@@ -1,0 +1,5 @@
+
+.link_disabled-decoration {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    color: black;
+}
