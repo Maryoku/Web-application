@@ -17,6 +17,11 @@
     font-size: large;
 }
 
+.menu__item-link {
+	text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    color: black;
+}
+
 .menu__item_focused {
     color: chocolate; /* цвет текста для неактивной ссылки */
 }

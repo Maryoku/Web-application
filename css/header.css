@@ -6,3 +6,8 @@
     display: inline-block;
     margin: 10px 150px 10px 50px;
 }
+
+.logo-link {
+	text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    color: black;
+}
