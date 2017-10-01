@@ -1,11 +1,19 @@
-.start-button {
+.button {
     width: 150px;
     height: 60px;
+    position: relative;
     margin: 15% 45%;
+    border: 2px solid black;
+    background-color: burlywood;
 }
 
-.button__link {
+.button__text {
+    position: relative;
+    top: 40%;
+    left: 15%;
+}
+
+.button__text-link {
 	text-decoration: none; /*убираем подчеркивание текста ссылок*/
     color: black;
-	font-weight: bold;
 }
