@@ -11,14 +11,13 @@
     <link rel="stylesheet" type="text/css" href="/css/top-list.css">
 </head>
 <header class="header header_theme_ligth-wood">
-    <h1 class="logo"><a class="logo-link" href="/index.php">HELPMEPLS</a></h1>
+    <h1 class="logo"><a class="logo-link" href="index.php">HELPMEPLS</a></h1>
     <?php
-        require('menu.php');
-        require('content.php');
-        echo Menu::renderMenu($_GET['page']);
+		require('page.php');
+        echo Page::renderMenu($_GET['page']);
     ?>
 </header>
     <?php
-        echo Content::getContent($_GET['page']);
+        echo Page::getContent($_GET['page']);
     ?>
 </html>
