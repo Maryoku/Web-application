@@ -1,8 +1,10 @@
 <?php
 
+define('DEFAULT_CONTENT_FILE', './assets/index.html');
+
 class Page {
+	
     public static $items = array (
-		0 => array( 'title' => '', 'link' => './assets/index.html'),
         1 => array( 'title' => 'Start', 'link' =>'./assets/start.html'),
         2 => array( 'title' => 'About', 'link' =>'./assets/about.html'),
         3 => array( 'title' => 'Top list', 'link' =>'./assets/toplist.html')
@@ -24,10 +26,12 @@ class Page {
         return $menu;
     }
 	
-    public static function getContent($item = 0) {
-		if (array_key_exists($item, self::$items)) {
-            return file_get_contents(self::$items[$item]['link']);
+    public static function getContent($item) {
+		$file = self::$items[$item]['link'];
+		
+		if ((array_key_exists($item, self::$items)) && (file_exists($file))) {
+            return file_get_contents($file);
 		}
-		else return file_get_contents(self::$items[0]['link']);
+		else return file_get_contents(DEFAULT_CONTENT_FILE);
     }
 }
